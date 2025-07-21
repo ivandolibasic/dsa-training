@@ -1,0 +1,11 @@
+COMPILE
+cl file.c
+
+RUN
+./file.exe
+
+editor.inlineSuggest.enabled
+
+https://stackoverflow.com/questions/71224911/can-github-copilot-stop-auto-suggesting-instead-be-triggered-by-a-keystroke
+
+copilot hover: disabled
