@@ -8,7 +8,7 @@ void enqueue(int x) {
     count++;
 }
 
-int dequeue() {
+int dequeue(void) {
     int result = queue[0];
     for (int i = 0; i < count - 1; i++)
         queue[i] = queue[i + 1];
@@ -16,7 +16,7 @@ int dequeue() {
     return result;
 }
 
-int main() {
+int main(void) {
     enqueue(1);
     enqueue(2);
     enqueue(3);

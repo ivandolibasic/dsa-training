@@ -29,6 +29,12 @@ void swap_elements(int *arr, int a, int b) {
     arr[b] = temp;
 }
 
+void swap(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
 int *reverse_array(int *arr, int length) {
     for (int i = 0; i < length / 2; i++)
         swap_elements(arr, i, length - 1 - i);
@@ -47,12 +53,12 @@ void find_greater_adjacenties(int *arr, int length) {
     printf("\nCount: %d\n", count);
 }
 
-void bubble_sort(int *arr, int length) {
-    for (int i = 0; i < length - i; i++) {
-        for (j = i + 1; j < length - i; j++) {
-            
-        }
-    }
+void bubble_sort(int *arr, int length)
+{
+    for (int i = 0; i < length - 1; i++)
+        for (int j = 0; j < length - i - 1; j++)
+            if (arr[j] > arr[j + 1])
+                swap(&arr[j], &arr[j + 1]);
 }
 
 int main() {
@@ -71,6 +77,9 @@ int main() {
 
     printf("Reversed ");
     print_array(reverse_array(arr, len), len);
+
+    bubble_sort(arr, len);
+    print_array(arr, len);
 
     return 0;
 }

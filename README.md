@@ -7,6 +7,6 @@
 - Huffman tree
 - Heapsort
 - Graphs
-- Networks structures
+- Network structures
 
 Alternative: https://github.com/mikeroyal/Algorithms-and-Data-Structures
