@@ -9,3 +9,18 @@ editor.inlineSuggest.enabled
 https://stackoverflow.com/questions/71224911/can-github-copilot-stop-auto-suggesting-instead-be-triggered-by-a-keystroke
 
 copilot hover: disabled
+
+Three ways to solve DSA problems "bottom-up":
+1. Develop programs in steps, gradually. E.g. write a helper function and extend the program until you get what you want.
+2. Use the compiler as an assistant. Print the solution and fix it until it works. A bit "bruteforce" method, but it works.
+3. If you don't know how to start, take a small sample and try to recognize a repeating pattern in it, and then write code for "N" elements. Rely on inductive reasoning by drawing a general conclusion from a single case.
+
+You don't immediately and always see the solution from start to finish; you build it!
+
+Tri načina rješavanja algoritamskih problema "odozdo prema gore":
+1. Razvijaj programe u koracima, postupno. Npr. napiši pomoćnu funkciju i proširuj program dok ne dobiješ ono što se traži.
+2. Koristi kompajler kao pomoćnika. Ispisuj rješenje i popravljaj ga dok ne proradi. Pomalo "nasilna" metoda, ali radi.
+3. Ako ne znaš kako započeti, uzmi mali uzorak i pokušaj prepoznati ponavljajući obrazac u njemu, a zatim napiši kod za "N" elemenata. Osloni se na induktivno zaključivanje izvlačenjem općeg zaključka iz pojedinačnog slučaja.
+4. Pitaj profesora. :)
+
+Ne vidiš odmah i uvijek rješenje s početka na kraj; izgrađuješ ga!
