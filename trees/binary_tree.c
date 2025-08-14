@@ -66,13 +66,22 @@ int linear_search(int *arr, int length, int target) {
     return -1;
 }
 
-Node *build_tree(int *preorder, int *inorder, int n) {
+Node *create_tree_from_traversals(int *preorder, int *inorder, int n) {
+    printf("Preorder: ");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", preorder[i]);
+    }
+    printf("\nInorder: ");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", inorder[i]);
+    }
+    printf("\n");
     if (n == 0)
         return NULL;
     Node *root = create_node(preorder[0]);
     int mid = linear_search(inorder, n, preorder[0]);
-    root->left = build_tree(preorder + 1, inorder, mid);
-    root->right = build_tree(preorder + 1 + mid, inorder + mid + 1, n - mid - 1);
+    root->left = create_tree_from_traversals(preorder + 1, inorder, mid);
+    root->right = create_tree_from_traversals(preorder + 1 + mid, inorder + mid + 1, n - mid - 1);
     return root;
 }
 
@@ -90,7 +99,7 @@ int main(void) {
     // postorder_traversal(root);
 
     int preorder[] = {3, 9, 20, 15, 7}, inorder[] = {9, 3, 15, 20, 7}, n = 5;
-    Node *tree = build_tree(preorder, inorder, n);
+    Node *tree = create_tree_from_traversals(preorder, inorder, n);
     printf("Preorder traversal: ");
     preorder_traversal(tree);
     printf("\nInorder traversal: ");
