@@ -1,3 +1,7 @@
+/*
+    Primjer: maksimalna suma k uzastopnih elemenata u nizu
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -10,6 +10,18 @@ https://stackoverflow.com/questions/71224911/can-github-copilot-stop-auto-sugges
 
 copilot hover: disabled
 
+Boilerplate code for every script:
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <stdbool.h>
+
+typedef struct Node {
+    int value;
+    struct Node *next;
+} Node;
+
 Three ways to solve DSA problems "bottom-up":
 1. Develop programs in steps, gradually. E.g. write a helper function and extend the program until you get what you want.
 2. Use the compiler as an assistant. Print the solution and fix it until it works. A bit "bruteforce" method, but it works.
