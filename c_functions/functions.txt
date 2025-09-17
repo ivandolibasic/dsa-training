@@ -1,0 +1,29 @@
+--CHARACTER INPUT
+getchar()
+getc()
+fgetc()
+gets()
+fgets()
+
+--CHARACTER OUTPUT
+putchar()
+putc()
+fputc()
+puts()
+fputs()
+
+--FORMATTED INPUT/OUTPUT
+printf()
+fprintf()
+scanf()
+fscanf()
+sscanf()
+
+--MATH/STRING
+abs()
+strlen()
+strcmp()
+
+--FILE ACCESS
+fopen()
+fclose()
